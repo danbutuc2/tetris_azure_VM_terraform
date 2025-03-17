@@ -1,0 +1,20 @@
+# Terraform state files (DO NOT COMMIT)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Ignore Terraform plan files
+*.tfplan
+
+# Ignore Terraform variables (DO NOT COMMIT SECRETS!)
+*.tfvars
+*.tfvars.json
+
+# Ignore .terraform directory
+.terraform/
+
+# Ignore keys
+dan-azure-key
+dan-azure-key.pub
