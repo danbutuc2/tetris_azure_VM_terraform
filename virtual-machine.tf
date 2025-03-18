@@ -1,4 +1,4 @@
-resource "azurerm_linux_virtual_machine" "dan-vm" {
+/*resource "azurerm_linux_virtual_machine" "dan-vm" {
   name                  = "dan-vm"
   resource_group_name   = azurerm_resource_group.dan-rg.name
   location              = azurerm_resource_group.dan-rg.location
@@ -25,4 +25,4 @@ resource "azurerm_linux_virtual_machine" "dan-vm" {
   tags = {
     environment = "Test"
   }
-}
+}*/
