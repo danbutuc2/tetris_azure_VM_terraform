@@ -18,3 +18,5 @@ crash.log
 # Ignore keys
 dan-azure-key
 dan-azure-key.pub
+
+NOTES.*
