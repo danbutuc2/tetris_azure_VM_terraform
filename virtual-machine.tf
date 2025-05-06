@@ -6,7 +6,7 @@ resource "azurerm_linux_virtual_machine" "dan-vm" {
   admin_username        = "dan"
   network_interface_ids = [azurerm_network_interface.dan-nic.id]
 
-  custom_data = filebase64("docker-install.sh")
+  custom_data                     = filebase64("docker-install.sh")
   disable_password_authentication = true
 
   admin_ssh_key {
@@ -15,7 +15,7 @@ resource "azurerm_linux_virtual_machine" "dan-vm" {
   }
 
   os_disk {
-    name             = "dan-vm-osdisk"
+    name                 = "dan-vm-osdisk"
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
   }

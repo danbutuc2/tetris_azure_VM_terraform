@@ -16,7 +16,7 @@ resource "azurerm_storage_container" "tfstate-container" {
 }
 
 
-
+/*
 resource "azurerm_storage_blob" "tfstate-blob" {
   name                   = "terraform.tfstate"
   storage_account_name   = azurerm_storage_account.tfstate-storage.name
@@ -24,3 +24,4 @@ resource "azurerm_storage_blob" "tfstate-blob" {
   type                   = "Block"
   source                 = "terraform.tfstate"
 }
+*/
