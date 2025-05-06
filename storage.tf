@@ -15,3 +15,12 @@ resource "azurerm_storage_container" "tfstate-container" {
   container_access_type = "private"
 }
 
+
+
+resource "azurerm_storage_blob" "tfstate-blob" {
+  name                   = "terraform.tfstate"
+  storage_account_name   = azurerm_storage_account.tfstate-storage.name
+  storage_container_name = azurerm_storage_container.tfstate-container.name
+  type                   = "Block"
+  source                 = "terraform.tfstate"
+}
