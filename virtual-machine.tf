@@ -15,6 +15,7 @@ resource "azurerm_linux_virtual_machine" "dan-vm" {
   }
 
   os_disk {
+    name             = "dan-vm-osdisk"
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
   }
